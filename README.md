@@ -14,10 +14,11 @@ supported. [PYPI Package](https://pypi.org/project/high-sql/)
     + [Installing and using the library](#install_use)
     + [Examples of usage](#examples)
 + [Manually install the library](#manual_install)
-    + [Prerequisites](#configuration)
+    + [Prerequisites](#prerequisites)
     + [Install the requirements](#installing_req)
     + [Run the Unit Tests](#unit_tests)
 + [Continuous Integration](#ci)
++ [Update PyPI package](#pypi)
 + [License](#license)
 
 ## Using the library <a name = "using"></a>
@@ -33,7 +34,7 @@ First, you need to install the library using pip:
 $ pip install high_sql
 ```
 
-Then, import it and use it like so:
+Then, import it and initialize it like so:
 
 ```python
 from high_sql import HighMySQL
@@ -106,8 +107,7 @@ in [example.py](https://github.com/drkostas/high-sql/tree/master/example.py).
 ## Manually install the library <a name = "manual_install"></a>
 
 These instructions will get you a copy of the project up and running on your local machine for
-development and testing purposes. See deployment for notes on how to deploy the project on a live
-system.
+development and testing purposes.
 
 ### Prerequisites <a name = "prerequisites"></a>
 
@@ -128,25 +128,20 @@ $ echo $SHELL
 ### Install the requirements <a name = "installing_req"></a>
 
 All the installation steps are being handled by
-the [Makefile](https://raw.githubusercontent.com/drkostas/high-sql/master/Makefile). First, create a
-file called `~/.pypirc` with your pypi login details, as follows:
+the [Makefile](https://raw.githubusercontent.com/drkostas/high-sql/master/Makefile).
 
-```
-[pypi]
-username = your_pypi_username
-password = your_pypi_password
-```
-
-Then, modify the python version and everything else you need in
+First, modify the python version (`min_python`) and everything else you need in
 the [settings.ini](https://raw.githubusercontent.com/drkostas/high-sql/master/settings.ini).
 
-Finally, execute the following commands:
+Then, execute the following commands:
 
 ```ShellSession
 $ make create_env
-$ conda activate high_sql
-$ make release
+$ conda activate yaml_config_wrapper
+$ make dist
 ```
+
+Now you are ready to use and modify the library.
 
 ### Run the Unit Tests <a name = "unit_tests"></a>
 
@@ -163,6 +158,31 @@ check the [setup guide](https://circleci.com/docs/2.0/language-python/).
 
 For any modifications, edit
 the [circleci config](https://raw.githubusercontent.com/drkostas/high-sql/master/.circleci/config.yml).
+
+## Update PyPI package <a name = "pypi"></a>
+
+This is mainly for future reference for the developers of this project. First,
+create a file called `~/.pypirc` with your pypi login details, as follows:
+
+```
+[pypi]
+username = your_pypi_username
+password = your_pypi_password
+```
+
+Then, modify the python version (`min_python`), project status (`status`), release version (`version`) 
+and everything else you need in
+the [settings.ini](https://raw.githubusercontent.com/drkostas/high-sql/master/settings.ini).
+
+Finally, execute the following commands:
+
+```ShellSession
+$ make create_env
+$ conda activate yaml_config_wrapper
+$ make release
+```
+
+For a dev release, change the `testing_version` and instead of `make release`, run `make release_test`.
 
 ## License <a name = "license"></a>
 
