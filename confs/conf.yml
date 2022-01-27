@@ -1,0 +1,9 @@
+tag: test
+high-sql:
+  - config:
+      hostname: your_hostname
+      username: your_username
+      password: your_password
+      db_name: your_db_name
+      port: 3306
+    type: mysql
