@@ -1,7 +1,7 @@
 # High SQL
 
 [![CircleCI](https://circleci.com/gh/drkostas/high-sql/tree/master.svg?style=svg)](https://circleci.com/gh/drkostas/high-sql/tree/master)
-[![GitHub license](https://img.shields.io/badge/license-Apache-blue.svg)](https://raw.githubusercontent.com/drkostas/high-sql/master/LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-Apache-blue.svg)](https://github.com/drkostas/high-sql/blob/master/LICENSE)
 
 ## About <a name = "about"></a>
 
@@ -128,10 +128,10 @@ $ echo $SHELL
 ### Install the requirements <a name = "installing_req"></a>
 
 All the installation steps are being handled by
-the [Makefile](https://raw.githubusercontent.com/drkostas/high-sql/master/Makefile).
+the [Makefile](https://github.com/drkostas/high-sql/tree/master/Makefile).
 
 First, modify the python version (`min_python`) and everything else you need in
-the [settings.ini](https://raw.githubusercontent.com/drkostas/high-sql/master/settings.ini).
+the [settings.ini](https://github.com/drkostas/high-sql/tree/master/settings.ini).
 
 Then, execute the following commands:
 
@@ -157,7 +157,7 @@ For the continuous integration, the <b>CircleCI</b> service is being used. For m
 check the [setup guide](https://circleci.com/docs/2.0/language-python/).
 
 For any modifications, edit
-the [circleci config](https://raw.githubusercontent.com/drkostas/high-sql/master/.circleci/config.yml).
+the [circleci config](https://github.com/drkostas/high-sql/tree/master/.circleci/config.yml).
 
 ## Update PyPI package <a name = "pypi"></a>
 
@@ -172,7 +172,7 @@ password = your_pypi_password
 
 Then, modify the python version (`min_python`), project status (`status`), release version (`version`) 
 and everything else you need in
-the [settings.ini](https://raw.githubusercontent.com/drkostas/high-sql/master/settings.ini).
+the [settings.ini](https://github.com/drkostas/high-sql/tree/master/settings.ini).
 
 Finally, execute the following commands:
 
@@ -187,6 +187,6 @@ For a dev release, change the `testing_version` and instead of `make release`, r
 ## License <a name = "license"></a>
 
 This project is licensed under the MIT License - see
-the [LICENSE](https://raw.githubusercontent.com/drkostas/high-sql/master/LICENSE) file for details.
+the [LICENSE](https://github.com/drkostas/high-sql/tree/master/LICENSE) file for details.
 
 <a href="https://www.buymeacoffee.com/drkostas" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
