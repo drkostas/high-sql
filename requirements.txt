@@ -1,4 +1,4 @@
 mysql-connector-python~=8.0.19
 mysql-connector~=2.2.9
-yaml-config-wrapper>=0.0.3
-termcolor-logger>=0.0.2
+yaml-config-wrapper>=1.0.4
+termcolor-logger>=1.0.3
