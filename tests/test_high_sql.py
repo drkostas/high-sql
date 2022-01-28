@@ -8,9 +8,9 @@ from typing import List
 from mysql.connector.errors import ProgrammingError as MsqlProgrammingError
 
 from yaml_config_wrapper import Configuration
-from high_sql import HighMySQL
+from high_sql import HighMySQL, ColorLogger
 
-logger = logging.getLogger('TestMysqlDatastore')
+logger = ColorLogger('TestMysqlDatastore')
 
 
 class TestMysqlDatastore(unittest.TestCase):
