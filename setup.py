@@ -36,8 +36,10 @@ config.read('settings.ini')
 cfg = config['DEFAULT']
 if testing:
     lib_version = cfg['testing_version']
+    print(f"Testing version: {lib_version}")
 else:
     lib_version = cfg['version']
+    print(f"Non-Testing version: {lib_version}")
 
 cfg_keys = 'description keywords author author_email'.split()
 expected = cfg_keys + "lib_name user branch license status min_python audience language".split()
