@@ -1,7 +1,8 @@
 # High SQL
 
-[![CircleCI](https://circleci.com/gh/drkostas/high-sql/tree/master.svg?style=svg)](https://circleci.com/gh/drkostas/high-sql/tree/master)
+[![Downloads](https://static.pepy.tech/personalized-badge/high-sql?period=total&units=international_system&left_color=grey&right_color=red&left_text=Downloads)](https://pepy.tech/project/high-sql)
 [![GitHub license](https://img.shields.io/badge/license-Apache-blue.svg)](https://github.com/drkostas/high-sql/blob/master/LICENSE)
+[![CircleCI](https://circleci.com/gh/drkostas/high-sql/tree/master.svg?style=svg)](https://circleci.com/gh/drkostas/high-sql/tree/master)
 
 ## About <a name = "about"></a>
 
