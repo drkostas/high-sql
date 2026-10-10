@@ -1,3 +1,5 @@
+![high-sql](docs/images/banner.png)
+
 # High SQL
 
 [![Downloads](https://static.pepy.tech/personalized-badge/high-sql?period=total&units=international_system&left_color=grey&right_color=red&left_text=Downloads)](https://pepy.tech/project/high-sql)
