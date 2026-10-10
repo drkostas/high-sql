@@ -1,0 +1,11 @@
+kind: banner
+name: high-sql
+line: A Python library that runs MySQL queries with a few simple calls.
+accent: teal
+diagram:
+- terminal:
+    label: python
+- arrow: sql
+- db:
+    label: mysql
+    accent: true
